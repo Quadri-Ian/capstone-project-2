@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="project.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+
+    <nav role="navigation">
+        <div id="menuToggle">
+
+          <input type="checkbox" />
+          
+
+          <span></span>
+          <span></span>
+          <span></span>
+          
+
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+			
+          </ul>
+        </div>
+      </nav><br><br><br><br>
+
+    <div class="form-container">
+	<h3>Form</h3>
+    <p>Please fill in your information properly and click submit after filling the form.</p>
+    <form>
+        <hr>
+        Username: <br><input id="username" type="text" name="Username">
+		<p style="color:red;" id="username-error"></p>
+        
+        Email Address:<br><input id="email" type="email" name="Email Address">
+		<p style="color:red" id="email-error"></p>
+        
+        Phone Number:<br><input id="phone" type="number" name="Phone Number">
+		<p style="color:red" id="phone-error"></p>
+        
+        Password:<br><input id="password" type="password" name="Password">
+		<i class="far fa-eye" id="togglePassword" style="margin-left: -40px; cursor: pointer;"></i>
+		<p style="color:red" id="password-error"></p>
+       Confirm Password:<br><input id="confirm-password" type="password" name="Confirm Password">
+	   <p style="color:red" id="confirm-password-error"></p>
+       
+       <p>What is your gender?</p>
+       <input type="radio" name="Gender" value="male" checked>Male
+      <input type="radio" name="Gender" value="female">Female
+	  <p style="color:red" id="gender-error"></p>
+       
+<hr>
+<input type="submit" id="submit" value="Submit">
+    </form>
+	</div>
+    
+	<script src="script.js"></script>
+</body>
+</html>
